@@ -1,0 +1,2 @@
+[32mINFO    [0m root:TestCases.py:20 Entered user name
+[32mINFO    [0m root:TestCases.py:24 test_set_text case passed

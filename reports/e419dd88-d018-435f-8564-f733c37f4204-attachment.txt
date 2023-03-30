@@ -1,0 +1,2 @@
+[32mINFO    [0m root:TestCases.py:20 Entered user name
+[32mINFO    [0m root:TestCases.py:23 #####Test case failed
