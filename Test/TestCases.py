@@ -14,13 +14,19 @@ class TestUiPractice(Logclass):
     def test_set_text(self):
         log = self.get_logs()
         hp = Home(self.driver)
-        hp.input_text("Devendra Shaky")
+        hp.input_text("Devendra Shakya")
         log.info("Entered user name")
         entered_text = self.driver.find_element(By.XPATH, hp.set_text).get_attribute("value")
         print("entered_text" + "=" + entered_text)
-        assert entered_text == "Devendra Shakya", log.info("#####Test case failed")
+        try:
+            assert entered_text == "Devendra Shakya", log.info("#####Test case failed")
+        finally:
+            if AssertionError:
+                print("Screenshot attached successfully")
+                allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot",
+                              attachment_type=AttachmentType.PNG)
         log.info("test_set_text case passed")
-        allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+        allure.attach(self.driver.get_screenshot_as_png(), name="Input Text Status", attachment_type=AttachmentType.PNG)
 
     @allure.description("Testing checkbox of RM infotech page")
     @allure.severity(severity_level="Normal")
@@ -29,9 +35,16 @@ class TestUiPractice(Logclass):
         hp = Home(self.driver)
         self.driver.find_element(By.XPATH, hp.checkbox1).click()
         self.driver.find_element(By.XPATH, hp.checkbox2).click()
-        self.driver.find_element(By.XPATH, hp.checkbox3).click()
+        # self.driver.find_element(By.XPATH, hp.checkbox3).click()
         is_checkbox_enabled = self.driver.find_element(By.XPATH, hp.checkbox3).is_selected()
-        assert is_checkbox_enabled == True
+        try:
+            assert is_checkbox_enabled == True
+        finally:
+            if AssertionError:
+                print("Screenshot attached successfully")
+                allure.attach(self.driver.get_screenshot_as_png(), name="CheckBox status",
+                              attachment_type=AttachmentType.PNG)
+
         log.info("test_checkboxes case passed")
     #
     # def test_switch_windows(self):
