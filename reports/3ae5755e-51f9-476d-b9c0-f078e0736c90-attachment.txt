@@ -1,0 +1,2 @@
+[32mINFO    [0m root:HomePage.py:23 Entered user name
+[32mINFO    [0m root:HomePage.py:44 #####Test case failed

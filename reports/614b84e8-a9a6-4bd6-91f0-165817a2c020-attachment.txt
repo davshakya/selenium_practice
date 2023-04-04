@@ -1,0 +1,1 @@
+[32mINFO    [0m root:TestCases.py:27 test_checkboxes case passed
