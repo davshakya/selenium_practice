@@ -24,7 +24,7 @@ class TestUiPractice(Logclass):
         log.info("test_checkboxes case passed")
 
     # def test_switch_windows(self):
-    #     log = self.get_logs()
+    #     log =
     #     hp = Home(self.driver)
     #     main = self.driver.window_handles[0]
     #     current_title = self.driver.title
