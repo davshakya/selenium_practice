@@ -5,16 +5,14 @@ from Utilities.logger import Logclass
 
 @pytest.mark.usefixtures("setup")
 class TestUiPractice(Logclass):
-
     @allure.description("Testing input textbox of RM infotech page")
     @allure.severity(severity_level="Critical")
     def test_set_text(self):
         log = self.get_logs()
         hp = Home(self.driver)
-        entered_text = hp.input_text("Devendra Shaky")
+        entered_text = hp.input_text("Devendra Shakya")
         hp.assertion_equal("Devendra Shakya", entered_text)
         log.info("test_set_text case passed")
-        allure.attach(self.driver.get_screenshot_as_png(), name="Input Text Status")
 
     @allure.description("Testing checkbox of RM infotech page")
     @allure.severity(severity_level="Normal")

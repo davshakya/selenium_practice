@@ -34,7 +34,7 @@ class Home(Logclass):
         try:
             assert is_checkbox_enabled == True
         finally:
-            if AssertionError:
+            if is_checkbox_enabled==False:
                 print("Screenshot attached successfully")
                 allure.attach(self.driver.get_screenshot_as_png(), name="CheckBox status",
                               attachment_type=AttachmentType.PNG)
@@ -44,7 +44,7 @@ class Home(Logclass):
         try:
             assert actual_string == expected_string, log.info("#####Test case failed")
         finally:
-            if AssertionError:
+            if actual_string != expected_string:
                 print("Screenshot attached successfully")
                 allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot",
                               attachment_type=AttachmentType.PNG)
