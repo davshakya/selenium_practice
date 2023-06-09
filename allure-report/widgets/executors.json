@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":23,"buildName":"selenium_run_from_local_drive #23","buildUrl":"http://localhost:8080/job/selenium_practice/23/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/selenium_practice/23/allure"}]
