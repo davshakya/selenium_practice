@@ -1,2 +1,0 @@
-INFO     root:HomePage.py:24 Entered user name
-INFO     root:TestCases.py:15 test_set_text case passed

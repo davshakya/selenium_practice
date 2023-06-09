@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Apr 09 17:07:18 IST 2023","Sun Apr 09 17:07:18 IST 2023","133","Test","TestCases","TestUiPractice","","","test_set_text","Testing input textbox of RM infotech page"
-"passed","Sun Apr 09 17:07:34 IST 2023","Sun Apr 09 17:07:35 IST 2023","223","Test","TestCases","TestUiPractice","","","test_checkboxes","Testing checkbox of RM infotech page"
