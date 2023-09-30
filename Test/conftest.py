@@ -13,3 +13,5 @@ def setup(request):
     time.sleep(5)
     request.cls.driver.quit()
 
+
+
