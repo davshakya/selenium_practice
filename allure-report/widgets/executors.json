@@ -1,1 +1,1 @@
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":24,"buildName":"selenium_run_from_local_drive #24","buildUrl":"http://localhost:8080/job/selenium_practice/24/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/selenium_practice/24/allure"}]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":26,"buildName":"selenium_run_from_local_drive #26","buildUrl":"http://localhost:8080/job/selenium_practice/26/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/selenium_practice/26/allure"}]
